@@ -1,0 +1,538 @@
+{
+  "_about": "Synthetic inbox for Nain's agent. Every person, company, address and amount is invented, and .example domains never resolve. Messages m-19 onward are modelled on the shapes of real mail, rewritten so that no real name, company, place, amount or detail remains. 'expected' is the ground truth used to score runs; the agent never reads it. 'also_ok' lists other labels a careful person could reasonably choose.",
+  "replied_threads": [
+    "t-06"
+  ],
+  "messages": [
+    {
+      "id": "m-01",
+      "thread_id": "t-01",
+      "received_at": "2026-10-05T08:12:00Z",
+      "sender": "accounts@brynhollowtea.example",
+      "subject": "Invoice 2291 for September",
+      "body": "Hello, please find attached invoice 2291 for September's tea delivery, total 84.50. Payment is due by 20 October. No action is needed if you pay by direct debit.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "Bryn Hollow Tea"
+    },
+    {
+      "id": "m-02",
+      "thread_id": "t-02",
+      "received_at": "2026-10-05T08:40:00Z",
+      "sender": "gwen.pryce@llanwernhall.example",
+      "subject": "Can we move Thursday's call?",
+      "body": "Something has come up on Thursday morning. Could we move our call to Friday at 2pm, or any time on Monday? Let me know what suits you.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": true,
+        "from_friend": false
+      },
+      "from_name": "Gwen Pryce"
+    },
+    {
+      "id": "m-03",
+      "thread_id": "t-03",
+      "received_at": "2026-10-05T09:01:00Z",
+      "sender": "digest@thekilnweekly.example",
+      "subject": "The Kiln Weekly: ten things we learned about small servers",
+      "body": "This week: quiet fans, cheap storage, and why your cupboard is warmer than you think. Reply and tell us what you are running! Unsubscribe at any time.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "The Kiln Weekly"
+    },
+    {
+      "id": "m-04",
+      "thread_id": "t-04",
+      "received_at": "2026-10-05T09:30:00Z",
+      "sender": "dafydd@morgansfamily.example",
+      "subject": "Sunday lunch",
+      "body": "Mam says you are coming for lunch on Sunday. Do you still not eat parsnips, or was that a phase? Bring the good biscuits.",
+      "expected": {
+        "label": "personal",
+        "needs_reply": true,
+        "from_friend": true
+      },
+      "from_name": "Dafydd Morgan"
+    },
+    {
+      "id": "m-05",
+      "thread_id": "t-05",
+      "received_at": "2026-10-05T10:15:00Z",
+      "sender": "billing@cairnhosting.example",
+      "subject": "Your card was declined",
+      "body": "We could not take payment for your server plan. Please update your payment details within 7 days or the service will be suspended. If you think this is a mistake, reply to this email.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "Cairn Hosting"
+    },
+    {
+      "id": "m-06",
+      "thread_id": "t-06",
+      "received_at": "2026-10-04T16:20:00Z",
+      "sender": "rhian@slatequarrypress.example",
+      "subject": "Quote for printing the recipe cards",
+      "body": "Thanks for asking. Five hundred cards on heavy stock would be 120, ready in two weeks. Shall I go ahead?",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false
+      },
+      "from_name": "Rhian, Slate Quarry Press"
+    },
+    {
+      "id": "m-07",
+      "thread_id": "t-07",
+      "received_at": "2026-10-05T11:02:00Z",
+      "sender": "noreply@calendar.lowtidemeet.example",
+      "subject": "Accepted: Review the hearth fan with Emrys",
+      "body": "Emrys Thomas has accepted your invitation for Wednesday 8 October at 11:00.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "Low Tide Meet"
+    },
+    {
+      "id": "m-08",
+      "thread_id": "t-08",
+      "received_at": "2026-10-05T11:45:00Z",
+      "sender": "news@greenlanternseeds.example",
+      "subject": "Autumn sowing guide, and 20 percent off garlic",
+      "body": "It is time to plant garlic. Our autumn guide covers spacing, soil and frost. Use code CLOVE20 at checkout this week.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "Green Lantern Seeds"
+    },
+    {
+      "id": "m-09",
+      "thread_id": "t-09",
+      "received_at": "2026-10-05T12:10:00Z",
+      "sender": "owain.lewis@riverbendcoop.example",
+      "subject": "Partnership question",
+      "body": "We run a small co-op and are thinking of hosting our own agents. Would you be open to a paid consultation next month? Happy to share more detail first.",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false
+      },
+      "from_name": "Owain Lewis"
+    },
+    {
+      "id": "m-10",
+      "thread_id": "t-10",
+      "received_at": "2026-10-05T13:00:00Z",
+      "sender": "accounts@brynhollowtea.example",
+      "subject": "Re: Invoice 2288 query",
+      "body": "You were right, we charged you twice for the August order. We can refund the duplicate or credit it to your next invoice. Which would you prefer?",
+      "expected": {
+        "label": "billing",
+        "needs_reply": true,
+        "from_friend": false
+      },
+      "from_name": "Bryn Hollow Tea"
+    },
+    {
+      "id": "m-11",
+      "thread_id": "t-11",
+      "received_at": "2026-10-05T13:30:00Z",
+      "sender": "ceri@morgansfamily.example",
+      "subject": "Photos from the walk",
+      "body": "Here are the photos from Saturday. The one of you and the sheep is my favourite. No need to reply, just thought you would like them.",
+      "expected": {
+        "label": "personal",
+        "needs_reply": false,
+        "from_friend": true
+      },
+      "from_name": "Ceri Morgan"
+    },
+    {
+      "id": "m-12",
+      "thread_id": "t-12",
+      "received_at": "2026-10-05T14:05:00Z",
+      "sender": "updates@thekilnweekly.example",
+      "subject": "Your Kiln Weekly subscription renews soon",
+      "body": "Your annual subscription renews on 1 November for 30. You do not need to do anything to keep receiving The Kiln Weekly.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "The Kiln Weekly"
+    },
+    {
+      "id": "m-13",
+      "thread_id": "t-13",
+      "received_at": "2026-10-05T14:40:00Z",
+      "sender": "seren.hughes@valleyschool.example",
+      "subject": "Talk for the computing club?",
+      "body": "Our computing club would love to hear how you run servers at home. Would you be willing to give a short talk one afternoon in November? We can work around your diary.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": true,
+        "from_friend": false
+      },
+      "from_name": "Seren Hughes"
+    },
+    {
+      "id": "m-14",
+      "thread_id": "t-14",
+      "received_at": "2026-10-05T15:15:00Z",
+      "sender": "alerts@cairnhosting.example",
+      "subject": "Scheduled maintenance on 12 October",
+      "body": "We will carry out maintenance on 12 October between 02:00 and 04:00. Your server may be unavailable for up to ten minutes. No action is required.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "other"
+        ]
+      },
+      "from_name": "Cairn Hosting"
+    },
+    {
+      "id": "m-15",
+      "thread_id": "t-02",
+      "received_at": "2026-10-05T16:00:00Z",
+      "sender": "gwen.pryce@llanwernhall.example",
+      "subject": "Re: Can we move Thursday's call?",
+      "body": "Sorry, one more thing: Monday afternoon is better for me than Friday, if that works.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": true,
+        "from_friend": false
+      },
+      "from_name": "Gwen Pryce"
+    },
+    {
+      "id": "m-16",
+      "thread_id": "t-16",
+      "received_at": "2026-10-05T16:30:00Z",
+      "sender": "hello@foxgloveknits.example",
+      "subject": "A new cardigan pattern, just for autumn",
+      "body": "Our new moss-stitch cardigan pattern is out. Reply to this email with a photo of your finished knit and we may feature it.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "Foxglove Knits"
+    },
+    {
+      "id": "m-17",
+      "thread_id": "t-17",
+      "received_at": "2026-10-05T17:05:00Z",
+      "sender": "tomos@neighbour-tyisaf.example",
+      "subject": "Your hedge",
+      "body": "The hedge on the lane side is getting into the road again. Would you like me to cut it back when I do mine on Saturday? I don't mind either way.",
+      "expected": {
+        "label": "personal",
+        "needs_reply": true,
+        "from_friend": true
+      },
+      "from_name": "Tomos, Ty Isaf"
+    },
+    {
+      "id": "m-18",
+      "thread_id": "t-18",
+      "received_at": "2026-10-05T17:40:00Z",
+      "sender": "legal@unknownregistry.example",
+      "subject": "URGENT: domain ownership dispute",
+      "body": "We have received a claim against a domain registered in your name. Please respond within 48 hours with proof of ownership.",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false
+      },
+      "from_name": "Registry Legal Team"
+    },
+    {
+      "id": "m-19",
+      "thread_id": "t-19",
+      "received_at": "2026-10-06T09:10:00Z",
+      "sender": "help@nestledpensions.example",
+      "subject": "Re: Unable to move my savings",
+      "body": "Dear Nain, thank you so much for sending the extra information. I have passed the details to our internal team so they can look into it, and I will be back in touch with an update as soon as I can.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "note": "Support acknowledgement: nothing to answer yet."
+      },
+      "from_name": "Nestled Pensions"
+    },
+    {
+      "id": "m-20",
+      "thread_id": "t-19",
+      "received_at": "2026-10-06T09:15:00Z",
+      "sender": "help@nestledpensions.example",
+      "subject": "Re: Unable to move my savings",
+      "body": "How did we do? Rate your conversation: Terrible, Bad, OK, Great, Amazing.",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "newsletter"
+        ]
+      },
+      "from_name": "Nestled Pensions"
+    },
+    {
+      "id": "m-21",
+      "thread_id": "t-19",
+      "received_at": "2026-10-07T14:02:00Z",
+      "sender": "help@nestledpensions.example",
+      "subject": "Re: Unable to move my savings",
+      "body": "Dear Nain, I am following up on the problem with your transfer. Our team found a mismatch: the country on your account is not the same as the country of the bank you asked us to pay into. Could you confirm which address is correct, or add a bank account in your country of residence?",
+      "expected": {
+        "label": "billing",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "needs_human"
+        ]
+      },
+      "from_name": "Nestled Pensions"
+    },
+    {
+      "id": "m-22",
+      "thread_id": "t-22",
+      "received_at": "2026-10-06T11:40:00Z",
+      "sender": "office@evergreenkeepstorage.example",
+      "subject": "Message about your storage unit",
+      "body": "Hi Nain, during our lock check your unit was found unlocked. We do not want to leave it unsecured. Please let us know when you can come by, or whether you would like us to fit one of our locks for now.",
+      "expected": {
+        "label": "other",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "needs_human",
+          "personal"
+        ]
+      },
+      "from_name": "Evergreen Keep Storage"
+    },
+    {
+      "id": "m-23",
+      "thread_id": "t-23",
+      "received_at": "2026-10-06T13:05:00Z",
+      "sender": "malia@highslopecoffee.example",
+      "subject": "Re: Checking in",
+      "body": "That is so kind of you. Shall we send one box next week and the second one a week or two after? I will tell you the total when I make the label. Aloha, Malia",
+      "expected": {
+        "label": "billing",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "personal",
+          "scheduling"
+        ],
+        "note": "A small seller writing personally about an order."
+      },
+      "from_name": "Malia, High Slope Coffee"
+    },
+    {
+      "id": "m-24",
+      "thread_id": "t-24",
+      "received_at": "2026-10-08T18:31:00Z",
+      "sender": "malia@highslopecoffee.example",
+      "subject": "Your order",
+      "body": "Hi Nain, the first box is nearly ready and will go in the post on Thursday morning. The total with shipping is 412.00. You can pay here: https://pay.highslopecoffee.example/i/4417. Thank you.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "note": "A person asking to be paid, with a payment link. Paying through the link is the only action, so no reply is needed."
+      },
+      "from_name": "Malia, High Slope Coffee"
+    },
+    {
+      "id": "m-25",
+      "thread_id": "t-24",
+      "received_at": "2026-10-09T07:16:00Z",
+      "sender": "malia@highslopecoffee.example",
+      "subject": "Re: Your order",
+      "body": "Thanks, payment received. Posting it in the morning. Aloha, Malia",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "personal"
+        ]
+      },
+      "from_name": "Malia, High Slope Coffee"
+    },
+    {
+      "id": "m-26",
+      "thread_id": "t-26",
+      "received_at": "2026-10-07T21:05:00Z",
+      "sender": "bethan.rees@cwmderi.example",
+      "subject": "Re: The beach",
+      "body": "Oh my goodness. When we were girls it was all dunes and room to run about and have a picnic. There are houses everywhere now. How can anyone call that the beach? Thank you for the picture, love.",
+      "expected": {
+        "label": "personal",
+        "needs_reply": true,
+        "from_friend": true,
+        "note": "A warm note from an old friend. A reply is the natural thing, even though she asks nothing."
+      },
+      "from_name": "Bethan Rees"
+    },
+    {
+      "id": "m-27",
+      "thread_id": "t-27",
+      "received_at": "2026-10-07T18:21:00Z",
+      "sender": "autopay@spreadpay.example",
+      "subject": "Your automatic payment is set for 12 October",
+      "body": "A payment is coming up. You will pay 96.40 on 12 October with automatic payment. Please make sure your bank account has enough in it. There is nothing else you need to do.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "SpreadPay"
+    },
+    {
+      "id": "m-28",
+      "thread_id": "t-28",
+      "received_at": "2026-10-07T19:26:00Z",
+      "sender": "statements@tidewaterinvest.example",
+      "subject": "Your statement is now available",
+      "body": "Your account statement is ready. Please log in to view it online.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "other"
+        ]
+      },
+      "from_name": "Tidewater Invest"
+    },
+    {
+      "id": "m-29",
+      "thread_id": "t-29",
+      "received_at": "2026-10-07T19:43:00Z",
+      "sender": "joel.marsh@hearthstonelending.example",
+      "subject": "New 845K loan limit available",
+      "body": "Hi Nain, you do not have to wait to take advantage of this increase. Reply to this email and I will run your numbers myself.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "note": "Bulk marketing sent from a named person's address, inviting a reply."
+      },
+      "from_name": "Joel Marsh, Hearthstone Lending"
+    },
+    {
+      "id": "m-30",
+      "thread_id": "t-30",
+      "received_at": "2026-10-07T18:12:00Z",
+      "sender": "noreply@codeharbour.example",
+      "subject": "Your access token is about to expire",
+      "body": "Your personal access token 'cupboard-deploy' will expire in 7 days. If you still need it, you can generate a new one from your settings.",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "needs_human"
+        ]
+      },
+      "from_name": "Code Harbour"
+    },
+    {
+      "id": "m-31",
+      "thread_id": "t-31",
+      "received_at": "2026-10-07T17:09:00Z",
+      "sender": "events@brightcellwellness.example",
+      "subject": "Your invite: live Q&A with our Chief Science Officer",
+      "body": "Join our Chief Science Officer live on video on 14 October for a conversation about sleep and recovery. Save your seat today.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "scheduling"
+        ],
+        "note": "An 'invite' that is really marketing."
+      },
+      "from_name": "Brightcell Wellness"
+    },
+    {
+      "id": "m-32",
+      "thread_id": "t-32",
+      "received_at": "2026-10-07T15:25:00Z",
+      "sender": "hello@leadfinch.example",
+      "subject": "Ends tonight at midnight",
+      "body": "Hey Nain, quick reminder: our 14-day free trial offer ends tonight at midnight. After that, it goes back to 7 days.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false
+      },
+      "from_name": "Leadfinch"
+    },
+    {
+      "id": "m-33",
+      "thread_id": "t-33",
+      "received_at": "2026-10-07T16:30:00Z",
+      "sender": "no-reply@safecityprofile.example",
+      "subject": "Is your safety profile up to date?",
+      "body": "Hello Nain, please confirm the information in your emergency safety profile. Accurate details can make all the difference to responders in an emergency.",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "newsletter"
+        ]
+      },
+      "from_name": "Safe City Profile"
+    },
+    {
+      "id": "m-34",
+      "thread_id": "t-34",
+      "received_at": "2026-10-07T16:39:00Z",
+      "sender": "news@shelfsignal.example",
+      "subject": "New mystery and thriller report: autumn edition",
+      "body": "Hi Nain, I am pleased to announce the new autumn edition of our twice-yearly genre report. It maps every category in detail.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "note": "Personalised greeting on bulk mail."
+      },
+      "from_name": "Shelf Signal"
+    },
+    {
+      "id": "m-35",
+      "thread_id": "t-35",
+      "received_at": "2026-10-09T10:20:00Z",
+      "sender": "malia@highslopecoffee.example",
+      "subject": "Second box",
+      "body": "Hi Nain, the second box is ready whenever you are. The total with shipping is 388.00. How would you like to pay this time? I can take a bank transfer or send you an invoice.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": true,
+        "from_friend": false,
+        "note": "The counterpart to m-24: a payment request with no link, which asks how to pay. Tests that Jev is not just reacting to the word 'pay'."
+      },
+      "from_name": "Malia, High Slope Coffee"
+    }
+  ]
+}

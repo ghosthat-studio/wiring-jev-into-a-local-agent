@@ -1,0 +1,485 @@
+{
+  "_about": "Second held-out test inbox, written without access to the agent's prompts.",
+  "replied_threads": [],
+  "messages": [
+    {
+      "id": "n-01",
+      "thread_id": "nt-01",
+      "received_at": "2026-11-02T08:14:00Z",
+      "sender": "billing@cwmpower.example",
+      "subject": "Your November electricity bill",
+      "body": "Hello Mrs Pritchard, your electricity bill for 14 October to 13 November is ready. The amount due is £87.42, payable by 28 November. You can pay online at https://pay.cwmpower.example/inv/55120 and view a breakdown of your usage in your online account.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": []
+      }
+    },
+    {
+      "id": "n-02",
+      "thread_id": "nt-02",
+      "received_at": "2026-11-02T09:40:00Z",
+      "sender": "delyth.ap@llythyr.example",
+      "subject": "News from this end",
+      "body": "Well, what a week. The roof man finally came and it only took him three goes to find the leak, and Elin's little one has started at the nursery and loves it. We've had nothing but rain, I expect you have too. Iolo sends his love and says to tell you the tablet you set up is still working, which is more than he is. Oh, and before I forget, have you still got Mam's bara brith recipe? Elin wants to make it for the chapel coffee morning on the 21st.",
+      "expected": {
+        "label": "personal",
+        "needs_reply": true,
+        "from_friend": true,
+        "also_ok": [],
+        "note": "Chatty family news with the only real question buried in the last two sentences; a skim would miss that she is asking for the recipe."
+      }
+    },
+    {
+      "id": "n-03",
+      "thread_id": "nt-03",
+      "received_at": "2026-11-02T13:05:00Z",
+      "sender": "digest@installerweekly.example",
+      "subject": "Installer Weekly: doorbell cameras, battery v wired, and new data rules",
+      "body": "This week: why more homeowners are choosing wired doorbell cameras over battery models, what the new guidance on recording neighbours' property means for installers, and five tips for running cable through stone walls. Read the full issue at https://installerweekly.example/issue/212. You are receiving this because you subscribed at installerweekly.example. Unsubscribe at any time.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Trade content relevant to her business, but it is still a subscription digest, not something needing her decision."
+      }
+    },
+    {
+      "id": "n-04",
+      "thread_id": "nt-04",
+      "received_at": "2026-11-03T07:52:00Z",
+      "sender": "alerts@banc-cymru-secure.example",
+      "subject": "URGENT: Your account has been suspended",
+      "body": "Dear Customer, we have detected unusual activity on your account and it has been temporarily suspended. To restore access you must verify your details within 24 hours at https://banc-cymru-secure.example/verify. Failure to do so will result in permanent closure of your account.",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Phishing: generic greeting, urgency, lookalike domain. It mentions an account and money-like consequences, so a sloppy sorter may call it billing or needs_human, and must certainly not reply."
+      }
+    },
+    {
+      "id": "n-05",
+      "thread_id": "nt-05",
+      "received_at": "2026-11-03T10:30:00Z",
+      "sender": "eirlys.morgan@bryn-isaf.example",
+      "subject": "Wednesday",
+      "body": "Hello Mrs Pritchard, I'm so sorry to be a nuisance but I've had a hospital appointment come through for Wednesday morning. Could you possibly come on Thursday afternoon instead to look at the internet? Any time after 1 would suit me.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": []
+      }
+    },
+    {
+      "id": "n-06",
+      "thread_id": "nt-06",
+      "received_at": "2026-11-03T15:18:00Z",
+      "sender": "dewi@ffermybont.example",
+      "subject": "Cameras for the farm",
+      "body": "Good afternoon Mrs Pritchard, your name was given to me by Huw at the Old Forge. We've had two quad bikes taken from the yard this autumn and I'm looking to put cameras on the sheds and the lane entrance, maybe eight in all, with something I can check on my phone. Could you give me a rough idea of cost? Also, do you work weekends? I'm out on the hill most weekdays. Dewi Parry, Fferm y Bont",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "scheduling"
+        ],
+        "note": "New-business enquiry needing a quote and a decision about weekend work. The weekend question could pull it toward scheduling, but pricing and taking the job are Nain's call."
+      }
+    },
+    {
+      "id": "n-07",
+      "thread_id": "nt-07",
+      "received_at": "2026-11-04T08:01:00Z",
+      "sender": "newsletter@llanfaircommunity.example",
+      "subject": "Llanfair-y-Cwm Community News - November",
+      "body": "In this month's issue: the Christmas lights switch-on is Saturday 28 November at 5pm, the library van is changing its day to Thursdays, and the snooker club is looking for a new treasurer. Plus Mrs Beynon's prize-winning chutney recipe. To stop receiving these emails, visit https://llanfaircommunity.example/unsub.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Local and friendly, and it contains dates, but it is a mass-mailed bulletin, not personal or scheduling."
+      }
+    },
+    {
+      "id": "n-08",
+      "thread_id": "nt-08",
+      "received_at": "2026-11-04T11:47:00Z",
+      "sender": "alun.next@pentremail.example",
+      "subject": "Bins",
+      "body": "Just to say the wind had your recycling box halfway down the lane this morning, so I've popped it back by your gate. No need to thank me! Alun",
+      "expected": {
+        "label": "personal",
+        "needs_reply": false,
+        "from_friend": true,
+        "also_ok": [],
+        "note": "A real neighbour writing personally, but he explicitly says no reply is needed. Some would still send a quick thanks; I judge it unnecessary."
+      }
+    },
+    {
+      "id": "n-09",
+      "thread_id": "nt-09",
+      "received_at": "2026-11-04T16:22:00Z",
+      "sender": "gwilym.hughes@postfan.example",
+      "subject": "Paid",
+      "body": "Hello Mrs Pritchard, I've sent the £85 for the router job over by bank transfer this morning, reference HUGHES ROUTER. My bank's been a bit funny lately, so would you mind letting me know when it's come through? Diolch, Gwilym",
+      "expected": {
+        "label": "billing",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "A payment email that does need a reply: the customer asks her to confirm receipt. Tests that 'billing' is not treated as automatically no-reply."
+      }
+    },
+    {
+      "id": "n-10",
+      "thread_id": "nt-10",
+      "received_at": "2026-11-05T09:12:00Z",
+      "sender": "orders@teleri-trade.example",
+      "subject": "Order TT-90388: item discontinued",
+      "body": "Hello, unfortunately the 2MP indoor camera (code TT-IC2) on your order TT-90388 has been discontinued by the manufacturer. We can substitute the TT-IC3, a newer model at £8.00 more per unit (5 units, £40.00 extra in total), or remove it from the order and refund that line. Please let us know which you'd prefer by Friday 13 November, otherwise the order will be held.",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "billing"
+        ],
+        "note": "Comes from a supplier's orders desk and mentions prices and refunds, so it looks like billing, but the real content is a business decision (pay more for a substitute or drop the line) with a deadline."
+      }
+    },
+    {
+      "id": "n-11",
+      "thread_id": "nt-11",
+      "received_at": "2026-11-05T12:33:00Z",
+      "sender": "tracking@swiftparcel.example",
+      "subject": "Your parcel is arriving Tuesday",
+      "body": "Good news! Your parcel from Teleri Trade will be delivered on Tuesday 10 November between 10:15 and 11:15. Not going to be in? Choose a safe place or change the day at https://swiftparcel.example/t/SP7720193.",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "scheduling"
+        ],
+        "note": "Automated delivery notice with a time slot. It is not an appointment Nain arranges, so I chose other; scheduling is defensible because of the slot."
+      }
+    },
+    {
+      "id": "n-12",
+      "thread_id": "nt-12",
+      "received_at": "2026-11-05T19:45:00Z",
+      "sender": "ceri.pritchard@llythyr.example",
+      "subject": "Big favour!!",
+      "body": "Hi Nain, hope you're well! Me and Rhys have been invited to a wedding on Saturday 21st and we were wondering if you could have the kids for the day? We'd drop them off about 10 and be back by 9ish. Totally fine if not, just let me know xx",
+      "expected": {
+        "label": "personal",
+        "needs_reply": true,
+        "from_friend": true,
+        "also_ok": [
+          "scheduling"
+        ],
+        "note": "Family request about a specific date. It is about arranging a time, but it is family, not business, so personal is the better fit."
+      }
+    },
+    {
+      "id": "n-13",
+      "thread_id": "nt-13",
+      "received_at": "2026-11-06T08:30:00Z",
+      "sender": "reminders@pentredental.example",
+      "subject": "Appointment reminder",
+      "body": "This is a reminder of your appointment with Dr Alwen Price at Pentre Dental Practice on Friday 20 November at 10:20. If you need to change or cancel, please telephone the surgery at least 24 hours beforehand. Please do not reply to this email.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "personal"
+        ],
+        "note": "Her own personal appointment rather than a business one; scheduling fits best, personal is reasonable."
+      }
+    },
+    {
+      "id": "n-14",
+      "thread_id": "nt-14",
+      "received_at": "2026-11-06T10:05:00Z",
+      "sender": "gethin@brightlane-supplies.example",
+      "subject": "Haven't seen you in a while, Nain!",
+      "body": "Hi Nain, it's Gethin from Brightlane Security Supplies. I noticed you haven't placed an order with us since the summer and wanted to check everything's OK! We've just got the new 2K bullet cameras in at trade price and I'd love to send you a sample, so just hit reply and tell me what you're working on. Cheers, Gethin. You are receiving this because you hold a trade account with us. Unsubscribe: https://brightlane-supplies.example/u/88231",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "other"
+        ],
+        "note": "Marketing dressed up as a personal check-in: first name, warm tone, 'just hit reply'. The unsubscribe footer shows it is a bulk sales email. No reply needed unless she wants stock."
+      }
+    },
+    {
+      "id": "n-15",
+      "thread_id": "nt-15",
+      "received_at": "2026-11-06T21:20:00Z",
+      "sender": "security@postfan.example",
+      "subject": "New sign-in to your account",
+      "body": "We noticed a new sign-in to your Postfan Mail account on 6 November at 21:14 from a laptop near Abercedwyn. If this was you, you don't need to do anything. If it wasn't, please secure your account at https://postfan.example/security.",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Automated security notice. She may want to check it, but there is no email to reply to."
+      }
+    },
+    {
+      "id": "n-16",
+      "thread_id": "nt-16",
+      "received_at": "2026-11-09T09:00:00Z",
+      "sender": "accounts@teleri-trade.example",
+      "subject": "Invoice TT-90211 - 6x Dome Camera 4MP",
+      "body": "Please find attached your invoice for £534.00 + VAT for the order dispatched on 6 November. You can pay securely by card at https://teleri-trade.example/pay/TT-90211. If you have any questions about this invoice, simply reply to this email and our accounts team will be happy to help.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Payment request with a payment link, so no reply under the owner's rule. The 'simply reply to this email' line is boilerplate and should not trigger needs_reply."
+      }
+    },
+    {
+      "id": "n-17",
+      "thread_id": "nt-17",
+      "received_at": "2026-11-09T11:41:00Z",
+      "sender": "rhiannon.davies@abercedwyn.example",
+      "subject": "Camera not recording",
+      "body": "Mrs Pritchard, the camera you fitted over the back door on 14 October has not recorded anything since last Thursday. Someone has been in the shed and there is nothing on it. I paid £240 for this and I am very disappointed. I would like to know what you intend to do about it.",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Angry customer complaint with an implied refund or repair demand. Mentions the price paid, which could tempt billing, but it needs Nain's judgement on how to put it right."
+      }
+    },
+    {
+      "id": "n-18",
+      "thread_id": "nt-18",
+      "received_at": "2026-11-09T14:10:00Z",
+      "sender": "noreply@bookcal.example",
+      "subject": "New booking: Home network survey - The Old Forge",
+      "body": "You have a new booking. Customer: Huw Rees. Service: Home network survey (1 hour). When: Wednesday 18 November, 09:00. Address: The Old Forge, Llanfair-y-Cwm. This booking has been added to your calendar.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Automated confirmation from her own booking tool; already in the calendar, nothing to answer."
+      }
+    },
+    {
+      "id": "n-19",
+      "thread_id": "nt-19",
+      "received_at": "2026-11-10T07:15:00Z",
+      "sender": "offers@gardd-garden.example",
+      "subject": "Mrs Pritchard, we've put some aside for you",
+      "body": "Dear Mrs Pritchard, as one of our valued Gardd Garden Centre card holders we've set aside a tray of winter pansies at half price, just for you. Simply reply YES to this email and we'll hold them at the till until Sunday. Offer limited to one tray per customer.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "other"
+        ],
+        "note": "Promotional email personalised with her name and inviting a reply. Replying is optional and only matters if she wants the pansies, so no reply needed."
+      }
+    },
+    {
+      "id": "n-20",
+      "thread_id": "nt-20",
+      "received_at": "2026-11-10T12:58:00Z",
+      "sender": "huw.rees@oldforge.example",
+      "subject": "Automatic reply: Network survey on the 18th",
+      "body": "Thank you for your email. I am away until Monday 16 November with limited access to email. For anything urgent, please ring the office. Huw Rees",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "scheduling"
+        ],
+        "note": "Out-of-office auto-reply from a customer. The subject mentions a booked job, which may pull it toward scheduling, but nothing is being arranged or asked."
+      }
+    },
+    {
+      "id": "n-21",
+      "thread_id": "nt-21",
+      "received_at": "2026-11-10T18:36:00Z",
+      "sender": "glenys.watkins@pentremail.example",
+      "subject": "laptop again",
+      "body": "Nain the laptop's doing that thing again where the screen goes all small and I can't find my emails. Is there any chance you could pop round one day this week? I'll have the kettle on. G x",
+      "expected": {
+        "label": "personal",
+        "needs_reply": true,
+        "from_friend": null,
+        "also_ok": [
+          "scheduling",
+          "needs_human"
+        ],
+        "note": "A neighbour and friend asking for computer help, which is also Nain's trade. The tone is a favour between friends with no mention of payment, so personal; scheduling or needs_human are defensible. She is a friend asking for help with Nain's trade, so a flag or a draft are both fine (from_friend is null)."
+      }
+    },
+    {
+      "id": "n-22",
+      "thread_id": "nt-22",
+      "received_at": "2026-11-11T09:27:00Z",
+      "sender": "renewals@dyffryninsure.example",
+      "subject": "Your business liability cover renews on 1 December",
+      "body": "Dear Mrs Pritchard, your public liability policy for Pritchard Home Tech renews on 1 December 2026. Your premium this year is £412.00 (last year £356.00), reflecting updated rates for trade installers. To renew, simply pay at https://dyffryninsure.example/renew/PL-30418. If you would like to review your level of cover before renewing, please telephone our team.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "needs_human"
+        ],
+        "note": "A noticeable price rise on business insurance might seem to need Nain's decision, but the email is a payment request with a payment link, and any review is by phone. No email reply needed."
+      }
+    },
+    {
+      "id": "n-23",
+      "thread_id": "nt-23",
+      "received_at": "2026-11-11T13:44:00Z",
+      "sender": "c.ellis@ysgolcwm.example",
+      "subject": "Work experience placement",
+      "body": "Dear Mrs Pritchard, I coordinate work experience for Year 10 at Ysgol y Cwm. One of our pupils, who is very keen on computers, has asked whether he could spend a week with you from 18 January. The placement would be unpaid and the school's insurance covers the pupil. Would you be willing to consider it? I'd be glad to talk it through.",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "scheduling"
+        ],
+        "note": "Has a date, but the core is whether Nain will take on a pupil, which is her business decision."
+      }
+    },
+    {
+      "id": "n-24",
+      "thread_id": "nt-24",
+      "received_at": "2026-11-12T08:49:00Z",
+      "sender": "mair.owen@cwmmail.example",
+      "subject": "Tomorrow",
+      "body": "Mrs Pritchard, I'm afraid I'll have to cancel tomorrow's visit for the camera. Dafydd was taken into hospital last night and I don't know when he'll be home. I'll be in touch when things settle down.",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "personal"
+        ],
+        "note": "Customer cancellation with no question asked, and she says she'll be in touch. I marked needs_reply true because a sensible business owner would acknowledge the cancellation and send good wishes, but I am not certain; false is arguable."
+      }
+    },
+    {
+      "id": "n-25",
+      "thread_id": "nt-25",
+      "received_at": "2026-11-12T10:20:00Z",
+      "sender": "feedback@cwmpower.example",
+      "subject": "How did we do?",
+      "body": "Dear Mrs Pritchard, you recently contacted our customer service team and we'd love to hear about your experience. It only takes two minutes: https://cwmpower.example/survey/41871. Thank you for your time.",
+      "expected": {
+        "label": "other",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "newsletter"
+        ],
+        "note": "Survey request from her electricity supplier; same sender family as a bill but not about payment. Not quite a newsletter either."
+      }
+    },
+    {
+      "id": "n-26",
+      "thread_id": "nt-26",
+      "received_at": "2026-11-12T17:03:00Z",
+      "sender": "bethan.lloyd@cwmmail.example",
+      "subject": "Photos from the party",
+      "body": "Here are the photos from Saturday. I think the one of you and Glenys by the cake is my favourite. Thank you again for coming, it made my day. Love, Bethan",
+      "expected": {
+        "label": "personal",
+        "needs_reply": true,
+        "from_friend": true,
+        "also_ok": [],
+        "note": "A personal note from a friend gets a reply."
+      }
+    },
+    {
+      "id": "n-27",
+      "thread_id": "nt-27",
+      "received_at": "2026-11-13T09:31:00Z",
+      "sender": "secretary@cwmbusinessclub.example",
+      "subject": "Cwm Business Club - November bulletin",
+      "body": "Croeso to the November bulletin. Our AGM is on Wednesday 25 November in the Red Lion function room at 7pm, with a talk on rural broadband. Please let me know by reply if you plan to attend so we can sort numbers for the buffet. Also this month: new member welcomes, and a reminder that subs are due in January.",
+      "expected": {
+        "label": "newsletter",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [
+          "scheduling"
+        ],
+        "note": "A members' bulletin that asks for an RSVP. The reply is only needed if she decides to go, so I marked false, but I am unsure; true is defensible."
+      }
+    },
+    {
+      "id": "n-28",
+      "thread_id": "nt-28",
+      "received_at": "2026-11-13T11:12:00Z",
+      "sender": "credit@seren-waste.example",
+      "subject": "Reminder: invoice 88123 unpaid",
+      "body": "Our records show that invoice 88123 for your commercial waste collection (£46.20, due 31 October) remains unpaid. Please pay by bank transfer to Seren Waste Services, quoting reference 88123. If you believe this reminder has been sent in error, please contact us.",
+      "expected": {
+        "label": "billing",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "Payment request with no payment link, so the owner's rule does not apply directly. By judgement the action is to pay by transfer, not to write back, so false; true would only be right if the invoice were wrong."
+      }
+    },
+    {
+      "id": "n-29",
+      "thread_id": "nt-29",
+      "received_at": "2026-11-16T10:08:00Z",
+      "sender": "owain@cartrefi-clyfar.example",
+      "subject": "Installer work in your area",
+      "body": "Hello Mrs Pritchard, I run Cartrefi Clyfar, a smart-home installation firm based in Abercedwyn. We've taken on more work than our two vans can manage and we're looking for an experienced local installer to take on overflow jobs, mostly doorbells and Wi-Fi extenders, at £30 an hour plus mileage. Would this be something you'd consider? Happy to meet for a coffee.",
+      "expected": {
+        "label": "needs_human",
+        "needs_reply": true,
+        "from_friend": false,
+        "also_ok": [
+          "other"
+        ],
+        "note": "Reads like cold outreach, but it is a specific, individually written business proposal that needs Nain's decision. Whether to reply depends on her interest; I marked true because a real person asked her a direct question, but false is arguable."
+      }
+    },
+    {
+      "id": "n-30",
+      "thread_id": "nt-30",
+      "received_at": "2026-11-16T15:55:00Z",
+      "sender": "tomos.jenkins@ffermwen.example",
+      "subject": "Tuesday at 10",
+      "body": "That's grand, Tuesday at 10 suits us fine. The gate code is 4417 and don't mind the dog, he's all bark. See you then, Tomos",
+      "expected": {
+        "label": "scheduling",
+        "needs_reply": false,
+        "from_friend": false,
+        "also_ok": [],
+        "note": "A customer confirming an arrangement Nain proposed. It is conversational and from a real person, but it closes the loop with no question, so no reply needed."
+      }
+    }
+  ]
+}
