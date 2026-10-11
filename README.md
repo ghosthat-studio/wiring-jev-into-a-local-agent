@@ -1,6 +1,6 @@
 # Wiring Jev into a local agent
 
-Companion code for **Old Nain, episode 001**: [Granny fixes your AI agent while the biscuits cool](https://www.youtube.com/watch?v=cm_4AmKAtmo).
+Companion code for **Old Nain, episode 001**: [Granny fixes your AI agent while the biscuits cool](https://www.youtube.com/watch?v=cm_4AmKAtmo). More episodes are on the [Old Nain YouTube channel](https://www.youtube.com/@Old_Nain).
 
 This is a small local email agent. It reads new mail, labels each message, decides whether the message needs a reply, and, if it does, writes a draft. When the message is from a friend or relative, it flags it instead, because the owner writes those replies herself. It never sends anything, because a person always sends.
 
